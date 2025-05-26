@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinevo - Movie Tickets</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffcccc">
+
+</head>
+<body>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-container">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2YvW7UQBCF7+Wn5BHgDdKkS5ESCCkVJQ0ShR2zSqdOdOEFaAEdXBAFAhpEAYRHSAMNj+DiJoWQEGExI+1xxruz9lr22mivtNKe9Xu+3Zk9s2sf0ILp6ekVAI8AvCF+MwPtC4C7AJbLlDUzO80hNxYvOZdlmZLXSKzkkBuLk5zLtKADJg4Bse0Axsy7AM7H9i/5LQD786o2wd8CuNQxEbtGATMzV2f81Sc/W5wntnUCIv7pRQxvHiVg7/Jc2KtmIbxJRcQVl78GcHWmgJyfpXnG/CyQCL6dJyDiLTnTTAa/K5LX8pzEb/nfMyH8Yb0CxsvBzOXrDOFvVCGgR6h5kZ7xdFXwdQj4OyWFnGe8i3HPi1vzAi1otqpcwOFBXX2yLfS5vjG8u7UJBgTRAgYJMM+XBZxrmmak9VYsYPDxIezT/VKONj+uB/PfP/gs4AHKKyjS8pqqONzTjkWXvgv4UdNnAb6vBLOHdO27Pt4+OI4DR4M4/r2Dhw86wdntD1tOzNX1XUQ6AYMEKMBnAd0WizQj7SmvsRYwqAv7jS9RbDcfbmG9v9V4OV+24CdP51s5+mE8XMAgAQrwWcDAbUndzeYaawGDz3+Lh5W3ymHl7fK08lY5Wnmr/GHlrXL0a+8wAhTgAgVU1YX4xlqASqiEqnSnuJ6fAhTggwDXhdKJY2olnk88jxhrAf59+0HiJcuPiA8g3n+jvGp8SpzE8ElUgpecOcUrhVcKrxTeg/VKasVYC3gJoFcg3ys69ibGWkCegDMN4c/UIaDJCTSpdjNbqvo75n8A1z2mBmweMDEAAAAASUVORK5CYII=" alt="Cinevo Logo">
+          <div class="inner-square"></div>
+        </div>
+        <span>Cinevo</span>
+      </div>
+
+      <div class="tagline">
+        Explore Entertainment, Anytime, Anywhere!
+      </div>
+
+      <div class="nav-categories">
+        <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-film"></i> Genres</a>
+        <a href="#"><i class="fas fa-ticket-alt"></i> My Bookings</a>
+        <a href="#"><i class="fas fa-history"></i> History</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+      </div>
+
+      <div class="sidebar-icons">
+        <a href="#"><i class="fa-solid fa-tag"></i></a>
+        <a href="#"><i class="fa-solid fa-ticket"></i></a>
+        <a href="#" class="active"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fa-solid fa-clock-rotate-left"></i></a>
+        <a href="#"><i class="fas fa-cog"></i></a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="desktop-cinevo">
+        <div class="title">Cinevo</div>
+        <div class="tagline">Endless Entertainment, Anytime, Anywhere!</div>
+      </div>
+      <div class="mobile-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Mumbai</span>
+        <i class="fas fa-chevron-down" style="font-size: 0.6rem; color: var(--text-secondary);"></i>
+        <div class="auto-detect-location">
+          <i class="fas fa-crosshairs"></i>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="What are you looking for?">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+
+      <div class="featured-movie">
+        <div class="trending-tag">
+          <i class="fas fa-fire"></i> Trending Now
+        </div>
+
+        <div class="featured-info">
+          <h1>Avengers: Endgame</h1>
+          <p class="release-date">26th April, Friday • In 2019</p>
+          <p class="description">After the devastating events of Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+
+          <div class="action-buttons">
+            <button class="book-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+            <button class="trailer-btn"><i class="fas fa-play"></i> Watch Trailer</button>
+          </div>
+        </div>
+
+        <div class="navigation-dots">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="recommendations">
+        <h2>You Might Like</h2>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Joker" onerror="this.src='https://via.placeholder.com/500x750/333/fff?text=Joker'">
+              </div>
+              <div class="movie-overlay">
+                <h3>Joker</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg" alt="Top Gun: Maverick" onerror="this.src='https://via.placeholder.com/500x750/333/fff?text=Top+Gun+Maverick'">
+              </div>
+              <div class="movie-overlay">
+                <h3>Top Gun: Maverick</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg" alt="Black Panther" onerror="this.src='https://via.placeholder.com/500x750/333/fff?text=Black+Panther'">
+              </div>
+              <div class="movie-overlay">
+                <h3>Black Panther</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg" alt="Spider-Man: No Way Home">
+              </div>
+              <div class="movie-overlay">
+                <h3>Spider-Man: No Way Home</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg" alt="Oppenheimer">
+              </div>
+              <div class="movie-overlay">
+                <h3>Oppenheimer</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Action Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Action</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg" alt="Fast X">
+                <div class="genre-tag">Action</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Fast X</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/NNxYkU70HPurnNCSiCjYAmacwm.jpg" alt="Mission: Impossible">
+                <div class="genre-tag">Action</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Mission: Impossible</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg" alt="John Wick: Chapter 4">
+                <div class="genre-tag">Action</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>John Wick: Chapter 4</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Avengers: Endgame">
+                <div class="genre-tag">Action</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Avengers: Endgame</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg" alt="Extraction 2">
+                <div class="genre-tag">Action</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Extraction 2</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Horror Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Horror</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg" alt="The Conjuring">
+                <div class="genre-tag">Horror</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Conjuring</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg" alt="IT">
+                <div class="genre-tag">Horror</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>IT</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg" alt="The Nun">
+                <div class="genre-tag">Horror</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Nun</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/p81a0FTAyRDLqGEVA3WWEyVZmtr.jpg" alt="Hereditary">
+                <div class="genre-tag">Horror</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Hereditary</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg" alt="Get Out">
+                <div class="genre-tag">Horror</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Get Out</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Comedy Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Comedy</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/zV8bHuSL6WXoD6FWogP9j4x80bL.jpg" alt="The Hangover">
+                <div class="genre-tag">Comedy</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Hangover</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg" alt="Superbad">
+                <div class="genre-tag">Comedy</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Superbad</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/8Flj8dwvdbcHKt2oKrUBGJGlpfE.jpg" alt="21 Jump Street">
+                <div class="genre-tag">Comedy</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>21 Jump Street</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/gJtTvLqoJl0ewGaGh4dU2FDsWbg.jpg" alt="Bridesmaids">
+                <div class="genre-tag">Comedy</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Bridesmaids</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/mUr2DEGVFyLKrI6prhYQHu8Mjf7.jpg" alt="Step Brothers">
+                <div class="genre-tag">Comedy</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Step Brothers</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Drama Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Drama</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflNmkJq6Q0FodL.jpg" alt="The Shawshank Redemption">
+                <div class="genre-tag">Drama</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Shawshank Redemption</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="The Godfather">
+                <div class="genre-tag">Drama</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Godfather</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindler's List">
+                <div class="genre-tag">Drama</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Schindler's List</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg" alt="Forrest Gump">
+                <div class="genre-tag">Drama</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Forrest Gump</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg" alt="The Green Mile">
+                <div class="genre-tag">Drama</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Green Mile</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Animation Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Animation</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg" alt="Toy Story">
+                <div class="genre-tag">Animation</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Toy Story</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg" alt="Finding Nemo">
+                <div class="genre-tag">Animation</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Finding Nemo</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg" alt="The Lion King">
+                <div class="genre-tag">Animation</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Lion King</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg" alt="Frozen">
+                <div class="genre-tag">Animation</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Frozen</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg" alt="Spider-Man: Into the Spider-Verse">
+                <div class="genre-tag">Animation</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Spider-Verse</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Sci-Fi Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Sci-Fi</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                <div class="genre-tag">Sci-Fi</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Interstellar</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="The Matrix">
+                <div class="genre-tag">Sci-Fi</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Matrix</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" alt="Blade Runner 2049">
+                <div class="genre-tag">Sci-Fi</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Blade Runner 2049</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Dune">
+                <div class="genre-tag">Sci-Fi</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Dune</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/tFbAsNK1943LQoAf6Ex6o1dzBRx.jpg" alt="Arrival">
+                <div class="genre-tag">Sci-Fi</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Arrival</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Documentary Genre Section -->
+      <div class="genre-section">
+        <div class="genre-header">
+          <h2>Documentary</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movie-grid-container">
+          <button class="scroll-button scroll-left" onclick="scrollMovieGrid(this.parentElement, -1)"><i class="fas fa-chevron-left"></i></button>
+          <div class="movie-grid">
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/6EA0l5Qft8hTfrlDENhOYDjjJhH.jpg" alt="Planet Earth">
+                <div class="genre-tag">Documentary</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Planet Earth</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/yXESHeyiOxlM8LLo5zz8bCF2k7Z.jpg" alt="Free Solo">
+                <div class="genre-tag">Documentary</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>Free Solo</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/3Kep5xL4xDuHEz3wG3KeYhHEqb1.jpg" alt="My Octopus Teacher">
+                <div class="genre-tag">Documentary</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>My Octopus Teacher</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/82h6LmvALCFi6ZKq2K2u8PQm0a3.jpg" alt="The Social Dilemma">
+                <div class="genre-tag">Documentary</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>The Social Dilemma</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card">
+              <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w500/yXl3pA8bnTKfcZjOwCrJaqpkzDD.jpg" alt="March of the Penguins">
+                <div class="genre-tag">Documentary</div>
+              </div>
+              <div class="movie-overlay">
+                <h3>March of the Penguins</h3>
+                <div class="card-buttons">
+                  <button class="card-btn book-card-btn"><i class="fas fa-ticket"></i> Book Seats</button>
+                  <button class="card-btn details-card-btn"><i class="fas fa-info-circle"></i> View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="scroll-button scroll-right" onclick="scrollMovieGrid(this.parentElement, 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      <!-- Mobile-only footer - positioned after all content -->
+      <footer class="mobile-footer">
+        <div class="footer-container">
+          <!-- Header section with title -->
+          <div class="footer-header">
+            <h3>🎬 Your Entertainment Hub</h3>
+            <p class="footer-subtitle">Where every story comes to life</p>
+          </div>
+
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <div class="footer-logo-container">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZUlEQVR4nO2YvW7UQBCF7+Wn5BHgDdKkS5ESCCkVJQ0ShR2zSqdOdOEFaAEdXBAFAhpEAYRHSAMNj+DiJoWQEGExI+1xxruz9lr22mivtNKe9Xu+3Zk9s2sf0ILp6ekVAI8AvCF+MwPtC4C7AJbLlDUzO80hNxYvOZdlmZLXSKzkkBuLk5zLtKADJg4Bse0Axsy7AM7H9i/5LQD786o2wd8CuNQxEbtGATMzV2f81Sc/W5wntnUCIv7pRQxvHiVg7/Jc2KtmIbxJRcQVl78GcHWmgJyfpXnG/CyQCL6dJyDiLTnTTAa/K5LX8pzEb/nfMyH8Yb0CxsvBzOXrDOFvVCGgR6h5kZ7xdFXwdQj4OyWFnGe8i3HPi1vzAi1otqpcwOFBXX2yLfS5vjG8u7UJBgTRAgYJMM+XBZxrmmak9VYsYPDxIezT/VKONj+uB/PfP/gs4AHKKyjS8pqqONzTjkWXvgv4UdNnAb6vBLOHdO27Pt4+OI4DR4M4/r2Dhw86wdntD1tOzNX1XUQ6AYMEKMBnAd0WizQj7SmvsRYwqAv7jS9RbDcfbmG9v9V4OV+24CdP51s5+mE8XMAgAQrwWcDAbUndzeYaawGDz3+Lh5W3ymHl7fK08lY5Wnmr/GHlrXL0a+8wAhTgAgVU1YX4xlqASqiEqnSnuJ6fAhTggwDXhdKJY2olnk88jxhrAf59+0HiJcuPiA8g3n+jvGp8SpzE8ElUgpecOcUrhVcKrxTeg/VKasVYC3gJoFcg3ys69ibGWkCegDMN4c/UIaDJCTSpdjNbqvo75n8A1z2mBmweMDEAAAAASUVORK5CYII=" alt="Cinevo Logo">
+                  <div class="footer-inner-square"></div>
+                </div>
+                <span>Cinevo</span>
+              </div>
+              <p class="footer-tagline">🌟 Discover, book, and experience cinema like never before. Your gateway to endless entertainment awaits!</p>
+            </div>
+            
+            <div class="footer-nav-apps">
+              <div class="footer-team">
+                <div class="team-section">
+                  <h4 class="team-title">👑 Founder</h4>
+                  <div class="team-member">
+                    <img src="attached_assets/pfp 1-modified.png" alt="Atharva" class="team-img">
+                    <div class="team-info">
+                      <p class="team-name">Atharva</p>
+                      <p class="team-role">CEO & Founder</p>
+                      <p class="team-desc">Visionary leader driving innovation in entertainment</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="team-section">
+                  <h4 class="team-title">🤝 Co-Founder</h4>
+                  <div class="team-member">
+                    <img src="attached_assets/pfp 2-modified.png" alt="Ayush" class="team-img">
+                    <div class="team-info">
+                      <p class="team-name">Ayush</p>
+                      <p class="team-role">COO & Co-Founder</p>
+                      <p class="team-desc">Operations expert ensuring seamless experiences</p>
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+              
+              <div class="footer-apps">
+                <a href="#" class="app-store-btn single-app-btn">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span><strong>Download our App</strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="footer-copyright">✨ Copyright 2023© Cinevo. All Rights Reserved. Made with ❤️</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Movie Details -->
+      <div class="movie-details">
+        <div class="desktop-sidebar-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Mumbai</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="ticket-pricing-banner">
+        <h3>Ticket Offers</h3>
+        <div class="pricing-container">
+          <div class="pricing-card standard">
+            <div class="price-info">
+              <div class="seat-type">Standard</div>
+              <div class="price">₹79</div>
+            </div>
+            <button class="book-now-btn">Book</button>
+          </div>
+          <div class="pricing-card premium">
+            <div class="price-info">
+              <div class="seat-type">Premium</div>
+              <div class="price">₹88</div>
+            </div>
+            <div class="popular-tag">Popular</div>
+            <button class="book-now-btn">Book</button>
+          </div>
+          <div class="pricing-card vip">
+            <div class="price-info">
+              <div class="seat-type">VIP</div>
+              <div class="price">₹99</div>
+            </div>
+            <button class="book-now-btn">Book</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="details-content">
+          <h3>App Launch Year</h3>
+          <p>2023</p>
+
+          <h3>Available Languages</h3>
+          <div class="languages">
+            <span class="clickable-tag">English</span>
+            <span class="clickable-tag">Hindi</span>
+          </div>
+
+          <h3>Genres</h3>
+          <div class="genres">
+            <span class="clickable-tag">Action</span>
+            <span class="clickable-tag">Animation</span>
+            <span class="clickable-tag">Comedy</span>
+            <span class="clickable-tag">Documentary</span>
+            <span class="clickable-tag">Drama</span>
+            <span class="clickable-tag">Horror</span>
+            <span class="clickable-tag">Sci-Fi</span>
+            <span class="clickable-tag">Thriller</span>
+          </div>
+
+          <h3>Founder</h3>
+          <div class="crew-member">
+            <img src="attached_assets/pfp 1-modified.png" alt="Atharva" class="crew-img">
+            <div>
+              <p class="crew-name">Atharva</p>
+              <p class="crew-role">CEO & Founder</p>
+            </div>
+          </div>
+
+          <h3>Co-Founder</h3>
+          <div class="crew-member">
+            <img src="attached_assets/pfp 2-modified.png" alt="Ayush" class="crew-img">
+            <div>
+              <p class="crew-name">Ayush</p>
+              <p class="crew-role">COO & Co-Founder</p>
+            </div>
+
+      
+      </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

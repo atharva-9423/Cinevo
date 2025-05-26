@@ -1,0 +1,25 @@
+{
+  "name": "Cinevo",
+  "short_name": "Cinevo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffcccc",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "700x700",
+      "type": "image/png"
+    }
+  ],
+  "description": "Book your movie tickets at discounted price.",
+  "categories": [
+    "entertainment",
+    "social"
+  ]
+}
